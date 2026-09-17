@@ -1,0 +1,101 @@
+symbol,nome,sector
+PGR,Progressive Corp,seguros
+TRV,Travelers Companies,seguros
+ALL,Allstate Corp,seguros
+CB,Chubb Limited,seguros
+MET,MetLife Inc,seguros
+PRU,Prudential Financial,seguros
+AIG,American International Group,seguros
+HIG,Hartford Financial Services,seguros
+CINF,Cincinnati Financial,seguros
+HAS,Hasbro Inc,brinquedos e jogos
+MAT,Mattel Inc,brinquedos e jogos
+JAKK,JAKKS Pacific,brinquedos e jogos
+FNKO,Funko Inc,brinquedos e jogos
+TTWO,Take-Two Interactive,brinquedos e jogos
+EA,Electronic Arts,brinquedos e jogos
+RBLX,Roblox Corp,brinquedos e jogos
+BBW,Build-A-Bear Workshop,brinquedos e jogos
+MODG,Topgolf Callaway Brands,brinquedos e jogos
+DHI,D.R. Horton,desenvolvimento imobiliário
+LEN,Lennar Corp,desenvolvimento imobiliário
+PHM,PulteGroup,desenvolvimento imobiliário
+NVR,NVR Inc,desenvolvimento imobiliário
+TOL,Toll Brothers,desenvolvimento imobiliário
+KBH,KB Home,desenvolvimento imobiliário
+MTH,Meritage Homes,desenvolvimento imobiliário
+TPH,Tri Pointe Homes,desenvolvimento imobiliário
+GRBK,Green Brick Partners,desenvolvimento imobiliário
+CRM,Salesforce Inc,software de aplicações
+ADBE,Adobe Inc,software de aplicações
+INTU,Intuit Inc,software de aplicações
+WDAY,Workday Inc,software de aplicações
+NOW,ServiceNow Inc,software de aplicações
+TEAM,Atlassian Corp,software de aplicações
+HUBS,HubSpot Inc,software de aplicações
+DDOG,Datadog Inc,software de aplicações
+SNOW,Snowflake Inc,software de aplicações
+ORCL,Oracle Corp,software e serviços de negócio
+SAP,SAP SE,software e serviços de negócio
+IBM,International Business Machines,software e serviços de negócio
+ADP,Automatic Data Processing,software e serviços de negócio
+PAYX,Paychex Inc,software e serviços de negócio
+FI,Fiserv Inc,software e serviços de negócio
+SSNC,SS&C Technologies,software e serviços de negócio
+EPAM,EPAM Systems,software e serviços de negócio
+MSFT,Microsoft Corp,software e serviços de negócio
+PANW,Palo Alto Networks,software e serviços de segurança
+CRWD,CrowdStrike Holdings,software e serviços de segurança
+FTNT,Fortinet Inc,software e serviços de segurança
+ZS,Zscaler Inc,software e serviços de segurança
+OKTA,Okta Inc,software e serviços de segurança
+CYBR,CyberArk Software,software e serviços de segurança
+S,SentinelOne Inc,software e serviços de segurança
+QLYS,Qualys Inc,software e serviços de segurança
+RPD,Rapid7 Inc,software e serviços de segurança
+DIS,Walt Disney Co,entretenimento
+NFLX,Netflix Inc,entretenimento
+WBD,Warner Bros Discovery,entretenimento
+PARA,Paramount Global,entretenimento
+LYV,Live Nation Entertainment,entretenimento
+CMCSA,Comcast Corp,entretenimento
+SPOT,Spotify Technology,entretenimento
+ROKU,Roku Inc,entretenimento
+CNK,Cinemark Holdings,entretenimento
+AZO,AutoZone Inc,venda de peças automóveis
+ORLY,O'Reilly Automotive,venda de peças automóveis
+AAP,Advance Auto Parts,venda de peças automóveis
+GPC,Genuine Parts Company,venda de peças automóveis
+LKQ,LKQ Corp,venda de peças automóveis
+MNRO,Monro Inc,venda de peças automóveis
+DORM,Dorman Products,venda de peças automóveis
+BWA,BorgWarner Inc,venda de peças automóveis
+APTV,Aptiv PLC,venda de peças automóveis
+ACN,Accenture PLC,serviços e tecnologia de informação
+CTSH,Cognizant Technology Solutions,serviços e tecnologia de informação
+INFY,Infosys Limited,serviços e tecnologia de informação
+WIT,Wipro Limited,serviços e tecnologia de informação
+DXC,DXC Technology,serviços e tecnologia de informação
+CDW,CDW Corp,serviços e tecnologia de informação
+LDOS,Leidos Holdings,serviços e tecnologia de informação
+G,Genpact Limited,serviços e tecnologia de informação
+GLOB,Globant SA,serviços e tecnologia de informação
+LMT,Lockheed Martin,programação e serviços aeroespaciais
+RTX,RTX Corp,programação e serviços aeroespaciais
+NOC,Northrop Grumman,programação e serviços aeroespaciais
+GD,General Dynamics,programação e serviços aeroespaciais
+BA,Boeing Co,programação e serviços aeroespaciais
+LHX,L3Harris Technologies,programação e serviços aeroespaciais
+HII,Huntington Ingalls Industries,programação e serviços aeroespaciais
+TXT,Textron Inc,programação e serviços aeroespaciais
+HEI,HEICO Corp,programação e serviços aeroespaciais
+XOM,Exxon Mobil Corp,energias
+CVX,Chevron Corp,energias
+COP,ConocoPhillips,energias
+SLB,SLB (Schlumberger),energias
+EOG,EOG Resources,energias
+OXY,Occidental Petroleum,energias
+NEE,NextEra Energy,energias
+DUK,Duke Energy,energias
+ENPH,Enphase Energy,energias
+FSLR,First Solar Inc,energias

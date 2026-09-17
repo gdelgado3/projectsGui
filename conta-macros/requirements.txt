@@ -1,0 +1,7 @@
+streamlit
+anthropic
+pandas
+Pillow
+python-dotenv
+rapidfuzz
+requests

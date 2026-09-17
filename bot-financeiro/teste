@@ -1,0 +1,14 @@
+import os
+from dotenv import load_dotenv
+import requests
+
+load_dotenv()
+
+keyTelegram=os.getenv("TELEGRAM")
+chat_id=os.getenv("TELEGRAM_CHAT_ID")
+
+url = f"https://api.telegram.org/bot{keyTelegram}/sendMessage"
+
+resposta=requests.post(url,data={"chat_id": chat_id, "text": "Sim, estou vivo 🤖"})
+
+print(resposta.status_code, resposta.json())

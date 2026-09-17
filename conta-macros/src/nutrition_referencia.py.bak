@@ -1,0 +1,58 @@
+import json
+
+import pandas as pd
+from rapidfuzz import fuzz, process
+
+CAMINHO_CSV = "data/alimentos_pt.csv"
+LIMIAR_FUZZY = 75
+
+
+def carregar_base_alimentos() -> pd.DataFrame:
+    return pd.read_csv(CAMINHO_CSV)
+
+
+def encontrar_alimento(nome: str, base: pd.DataFrame) -> pd.Series | None:
+    correspondencia_exata = base[base["nome"] == nome]
+    if not correspondencia_exata.empty:
+        return correspondencia_exata.iloc[0]
+
+    nomes_disponiveis = base["nome"].tolist()
+    melhor_match, score, _ = process.extractOne(
+        nome, nomes_disponiveis, scorer=fuzz.partial_ratio
+    )
+
+    if score >= LIMIAR_FUZZY:
+        print(f"'{nome}' -> '{melhor_match}' (score {score:.0f})")
+        return base[base["nome"] == melhor_match].iloc[0]
+
+    print(f"Aviso: '{nome}' não encontrado (melhor match '{melhor_match}', score {score:.0f})")
+    return None
+
+
+def calcular_macros(alimentos_detectados: list[dict]) -> dict:
+    base = carregar_base_alimentos()
+    totais = {"kcal": 0.0, "proteina_g": 0.0, "hidratos_g": 0.0, "gordura_g": 0.0}
+
+    for alimento in alimentos_detectados:
+        linha = encontrar_alimento(alimento["nome"], base)
+        if linha is None:
+            continue
+
+        fator = alimento["porcao_g"] / 100
+        totais["kcal"] += linha["kcal_100g"] * fator
+        totais["proteina_g"] += linha["proteina_g"] * fator
+        totais["hidratos_g"] += linha["hidratos_g"] * fator
+        totais["gordura_g"] += linha["gordura_g"] * fator
+
+    return {k: round(v, 1) for k, v in totais.items()}
+
+
+if __name__ == "__main__":
+    from src.vision import analisar_imagem
+
+    resultado_vision = analisar_imagem("data/foto1.jpeg")
+    if resultado_vision is None:
+        print("Falhou a análise da imagem.")
+    else:
+        totais = calcular_macros(resultado_vision["alimentos"])
+        print(json.dumps(totais, indent=2, ensure_ascii=False))
